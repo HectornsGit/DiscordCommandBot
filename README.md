@@ -1,11 +1,5 @@
-# Discord Bot
+# Discord Bot template
 
-This project was created with **create-discord-app**!
+--Using discord.js,discord-interactions and express.
 
-# Start Your Bot (Production)
 
-`npm run start`
-
-# Join Our Discord Server
-
-**[https://discord.gg/2SUybzb](https://discord.gg/2SUybzb)**
