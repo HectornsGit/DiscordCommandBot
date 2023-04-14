@@ -1,6 +1,7 @@
 const { verifyKey } = require('discord-interactions');
-
+const fetch = require("node-fetch");
 require('dotenv').config();
+const {TOKEN} = process.env
 
 function VerifyDiscordRequest(clientKey) {
   return function (req, res, buf, encoding) {
@@ -23,7 +24,7 @@ async function DiscordRequest(endpoint, options) {
 
   const res = await fetch(url, {
     headers: {
-      Authorization: `Bot ${process.env.TOKEN}`,
+      Authorization: `Bot ${TOKEN}`,
       'Content-Type': 'application/json; charset=UTF-8',
       'User-Agent': 'Vaya Friki',
     },
