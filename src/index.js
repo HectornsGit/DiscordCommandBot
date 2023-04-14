@@ -30,7 +30,7 @@ app.post('/interactions', async (req, res) => {
     if (name === 'test') {
       return res.send({
         type: InteractionResponseType.CHANNEL_MESSAGE_WITH_SOURCE,
-        data: { content: 'Me follo a tu madre' },
+        data: { content: '¡Estoy vivo!' },
       });
     }
   }
